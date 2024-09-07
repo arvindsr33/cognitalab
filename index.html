@@ -1,73 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Barebones Website</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cognita AI - Self-Driving AI for Luxury Cars</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      header {
-        background-color: #f4f4f4;
-        padding: 1rem;
-        text-align: center;
-      }
-      nav {
-        margin-top: 1rem;
-      }
-      nav a {
-        margin-right: 10px;
-      }
-      main {
-        margin-top: 20px;
-      }
-      footer {
-        margin-top: 20px;
-        text-align: center;
-        font-size: 0.8rem;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color: #121212;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            text-align: center;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        section {
+            padding: 100px 20px;
+            min-height: 100vh;
+        }
+        .hero {
+            background-image: url('your-hero-image-url.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        .hero button {
+            padding: 15px 30px;
+            font-size: 1em;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .team .profile {
+            display: inline-block;
+            text-align: center;
+            width: 200px;
+        }
+        .team img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #000;
+        }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <header>
-      <h1>Welcome to My Website</h1>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#team">Team</a>
         <a href="#contact">Contact</a>
-      </nav>
     </header>
 
-    <main>
-      <section id="home">
-        <h2>Home</h2>
-        <p>
-          Welcome to my barebones website. This is a simple template you can
-          build upon.
-        </p>
-      </section>
+    <section class="hero">
+        <h1>Advanced Self-Driving AI for Luxury Cars</h1>
+        <p>Revolutionizing self-driving capabilities in luxury vehicles</p>
+        <button onclick="document.getElementById('solution').scrollIntoView({behavior: 'smooth'})">Learn More</button>
+    </section>
 
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          This is where you can add information about yourself or your company.
-        </p>
-      </section>
+    <section id="problem">
+        <h2 class="section-title">The Problem</h2>
+        <p>Luxury cars have lagged behind in self-driving capabilities, with non-Tesla brands struggling to meet expectations despite customer willingness to pay for premium features.</p>
+        <p><strong>1.88M non-Tesla luxury cars sold in the USA in 2023.</strong></p>
+    </section>
 
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at: your.email@example.com</p>
-      </section>
-    </main>
+    <section id="solution">
+        <h2 class="section-title">Our Solution</h2>
+        <p>Cognita AI provides a customized, iterative AI engine designed to elevate self-driving capabilities in luxury cars.</p>
+        <ul>
+            <li>Advanced AI engine</li>
+            <li>Continuous data capture, model training, and deployment</li>
+            <li>Scalable across car companies</li>
+        </ul>
+    </section>
+
+    <section id="team">
+        <h2 class="section-title">Our Team</h2>
+        <div class="team">
+            <div class="profile">
+                <img src="your-image-url.jpg" alt="Arvind Srivastav">
+                <h3>Arvind Srivastav</h3>
+                <p>CEO</p>
+            </div>
+            <div class="profile">
+                <img src="your-image-url.jpg" alt="Lauren Fratamico">
+                <h3>Lauren Fratamico</h3>
+                <p>CTO</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <p>Email: <a href="mailto:arvind@cognitalab.net">arvind@cognitalab.net</a></p>
+        <p>Phone: +1 (650) 788-9529</p>
+    </section>
 
     <footer>
-      <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Cognita AI. All rights reserved.</p>
     </footer>
-  </body>
+</body>
 </html>
